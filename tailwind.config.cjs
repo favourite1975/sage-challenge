@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        home: 'url("./src/assets/media/img/home.png")',
+        home: 'url("../src/assets/media/img/home.png")',
       
       },
       fontFamily: {
