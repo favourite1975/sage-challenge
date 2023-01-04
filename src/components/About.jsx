@@ -14,7 +14,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="w-1/2 pr-[10rem]">
+                <div className="w-1/2 pr-[8rem] pl-8">
                     <div>
                        <h1 className="font-interb text-[40px] text-secondary leading-[54px]">Flexibility and options to suit your lifestyle.</h1> 
                     </div>
