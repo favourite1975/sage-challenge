@@ -17,7 +17,7 @@ const Home = () => {
 
                 <div className="flex w-full flex-row pt-12 justify-center items-center">
                     <div className="w-1/2 ">
-                        <div className="pr-[18rem] font-inter text-white leading-[70px] font-semibold capitalize font-normal text-[42px]">{home[0].title}</div>
+                        <div className="pr-[8rem] font-inter text-white leading-[70px] font-semibold capitalize font-normal text-[42px]">{home[0].title}</div>
                     </div>
                     <div>
                         <div>
