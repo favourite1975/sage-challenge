@@ -8,6 +8,10 @@ module.exports = {
     extend: {
       backgroundImage: {
         home: 'url("../src/assets/media/img/home.png")',
+        cleaning : 'url("../src/assets/media/img/cleaning.png")',
+        flexible : 'url("../src/assets/media/img/flexible.png")',
+        happiness : 'url("../src/assets/media/img/happiness.png")',
+        roomate : 'url("../src/assets/media/img/roomate.png")',
       
       },
       fontFamily: {

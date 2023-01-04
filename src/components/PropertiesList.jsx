@@ -1,9 +1,13 @@
 // Data
 import data from '../data/data.json'
+import { Tab } from '@headlessui/react'
+import Properties from './Properties'
 
 const PropertiesList = () => {
-        let properties = data.properties
-        console.log(properties)
+
+    function classNames(...classes) {
+        return classes.filter(Boolean).join(' ')
+    }
 
     return ( 
         <div className="pl-20 bg-[#F5F5F5] pt-20 pb-10">
@@ -15,25 +19,96 @@ const PropertiesList = () => {
                     <button className="bg-primary w-[200px] h-[65px] flex justify-center items-center  rounded-[5px]">View All Property</button>
                 </div>
             </div>
-            <div>
-            <div className="px-20">
-                <div className='grid lg:grid-cols-3 xl:grid-cols-3 grid-cols-1 pt-8 gap-5'>
-                    {properties.map((property) => {
-                        return (
-                            <div key={property.id} className="flex flex-col justify-start border-2 border-[#979797] w-[80%] mb-8 shadow-[0_34.0693px_36.1986px_rgba(0,0,0,0.133714)] rounded-[26.6166px]">
-                                <div className=''>
-                                    <img src={property.propertyImg} alt="" />
-                                </div>
-                                <div className='px-4 pt-2 pb-5'>
-                                    <div className="pt-2 font-dmsan text-black font-bold capitalize font-normal text-[18px]">{property.address}</div>
-                                    <div className='font-normal pt-2 capitalize font-dmsan text-[18px] text-[#818181]'>{property.room}</div>
-                                    <div className='font-bold pt-2 capitalize font-dmsan text-[22px] text-[#F4511E]'>{property.price}</div>
-                                </div>
-                            </div>
-                        )
-                    })}
+            <div className="">
+            <Tab.Group>
+                <Tab.Panels>
+                    <Tab.Panel>
+                        <Properties />
+                    </Tab.Panel>
+                    <Tab.Panel>
+                        <Properties />
+                    </Tab.Panel>
+                    <Tab.Panel>
+                        <Properties />
+                    </Tab.Panel>
+                    <Tab.Panel>
+                        <Properties />
+                    </Tab.Panel>
+                    <Tab.Panel>
+                        <Properties />
+                    </Tab.Panel>
+                </Tab.Panels>
+
+                <div className='flex justify-center items-center px-20 py-10'>
+                    <Tab.List className="flex w-1/2 space-x-1 rounded-xl border-4 text-primary p-1">
+                            <Tab
+                            className={({ selected }) =>
+                                classNames(
+                                'w-full rounded-lg py-2.5 text-sm font-medium leading-5 ',
+                                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                                selected
+                                    ? 'bg-primary text-white'
+                                    : 'bg-[#BDBDBD] text-white '
+                                )
+                            }
+                            >
+                            first
+                            </Tab>
+                            <Tab
+                            className={({ selected }) =>
+                                classNames(
+                                'w-full rounded-lg py-2.5 text-sm font-medium leading-5',
+                                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                                selected
+                                    ? 'bg-primary text-white shadow'
+                                    : 'bg-white text-primary'
+                                )
+                            }
+                            >
+                            1
+                            </Tab>
+                            <Tab
+                            className={({ selected }) =>
+                                classNames(
+                                'w-full rounded-lg py-2.5 text-sm font-medium leading-5 ',
+                                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                                selected
+                                    ? 'bg-primary text-white shadow'
+                                    : 'bg-white text-primary'
+                                )
+                            }
+                            >
+                            2
+                            </Tab>
+                            <Tab
+                            className={({ selected }) =>
+                                classNames(
+                                'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-primary',
+                                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                                selected
+                                    ? 'bg-primary text-white shadow'
+                                    : 'bg-white text-primary'
+                                )
+                            }
+                            >
+                            3
+                            </Tab>
+                            <Tab
+                            className={({ selected }) =>
+                                classNames(
+                                'w-full rounded-lg py-2.5 text-sm font-medium leading-5',
+                                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                                selected
+                                    ? 'bg-primary text-white shadow'
+                                    : 'bg-white text-primary'
+                                )
+                            }
+                            >
+                            Next
+                            </Tab>
+                        </Tab.List>
                 </div>
-            </div>
+            </Tab.Group>
             </div>
         </div>
      );

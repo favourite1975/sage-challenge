@@ -6,6 +6,7 @@ import { Menu } from '@headlessui/react'
 import Dropdown from "../components/Dropdown";
 import Offers from "../components/Offers";
 import PropertiesList from "../components/PropertiesList";
+import About from "../components/About";
 
 
 const Home = () => {
@@ -45,6 +46,9 @@ const Home = () => {
                 </section>
                 <section>
                     <PropertiesList />
+                </section>
+                <section>
+                    <About />
                 </section>
             </main>
         </div>
