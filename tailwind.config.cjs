@@ -18,6 +18,7 @@ module.exports = {
         'dmsan': "dmsan",
         'inter': "inter",
         'interb': "interb",
+        'popins' : "popins"
         
       },
       colors: {

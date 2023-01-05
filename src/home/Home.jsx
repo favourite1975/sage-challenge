@@ -7,6 +7,9 @@ import Dropdown from "../components/Dropdown";
 import Offers from "../components/Offers";
 import PropertiesList from "../components/PropertiesList";
 import About from "../components/About";
+import AddProperty from "../components/AddProperty";
+import Author from "../components/Author";
+import Footer from "../components/Footer";
 
 
 const Home = () => {
@@ -50,6 +53,15 @@ const Home = () => {
                 <section>
                     <About />
                 </section>
+                <section>
+                    <AddProperty />
+                </section>
+                <section>
+                    <Author />
+                </section>
+                <footer>
+                    <Footer/>
+                </footer>
             </main>
         </div>
      );

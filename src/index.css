@@ -20,3 +20,7 @@
     font-family: interb;
     src: url(./assets/fonts/Inter-Bold.ttf);
 }
+@font-face {
+    font-family: popins;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
