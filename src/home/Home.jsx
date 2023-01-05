@@ -25,21 +25,21 @@ const Home = () => {
         AOS.refresh();
       }, []);
     return ( 
-        <div >
+        <div className="w-full">
             <header className="bg-home h-screen w-full bg-cover bg-no-repeat ">
                 <Navbar />
 
-                <div className="flex w-full flex-row pt-12 justify-center items-center" >
-                    <div className="w-1/2 " data-aos="fade-right" data-aos-duration="2000">
-                        <div className="pr-[8rem] font-inter text-white leading-[70px] font-semibold capitalize font-normal text-[42px]">{home[0].title}</div>
+                <div className="flex w-full flex-col xl:flex-row lg:flex-row pt-12 justify-center items-center" >
+                    <div className="lg:w-1/2 xl:w-1/2 w-full" data-aos="fade-right" data-aos-duration="2000">
+                        <div className="px-5 lg:px-0 xl:px-0 lg:pr-[8rem] xl:pr-[8rem] font-inter text-white lg:leading-[70px] xl:leading-[70px] text-center lg:text-left xl:text-left font-semibold capitalize font-normal text-[22px] lg:text-[42px] xl:text-[42px]">{home[0].title}</div>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="3000">
-                        <div>
-                            <img src={map} alt="" />
+                    <div className="flex flex-col justify-center items-center lg:justify-start xl:justify-start" data-aos="fade-up" data-aos-duration="3000">
+                        <div className="flex justify-center items-center pt-4 lg:justify-start xl:justify-start">
+                            <img src={map} alt="" className="w-[90%] lg:w-full xl:w-full"/>
                         </div>
-                        <div className="py-4 rounded-xl gap-2 mx-5 bg-white pl-8 flex flex-row">
-                            <div className="">
-                                <Dropdown value={"all types"}/>
+                        <div className="py-4 rounded-xl gap-2 w-[90%] bg-white pl-8 flex flex-row">
+                            <div >
+                                <Dropdown value={"all types"} />
                             </div>
                             <div className="">
                                 <Dropdown value={"Neighborhood"}/>
@@ -69,7 +69,7 @@ const Home = () => {
                 <section>
                     <Author />
                 </section>
-                <footer data-aos="fade-up" data-aos-duration="2000">
+                <footer>
                     <Footer/>
                 </footer>
             </main>

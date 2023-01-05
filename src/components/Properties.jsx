@@ -16,10 +16,8 @@ const Properties = () => {
 
     return ( 
        <>
-
-            <div>
-            <div className="px-20">
-                <div className='grid lg:grid-cols-3 xl:grid-cols-3 grid-cols-1 pt-8 gap-5'>
+            <div className="w-full flex justify-center items-center  lg:px-20 xl:px-20">
+                <div className='grid lg:grid-cols-3 xl:grid-cols-3 grid-cols-1 pt-8 gap-0 justify-items-center lg:gap-5 xl:gap-5'>
                     {properties.map((property) => {
                         return (
                             <div key={property.id} className="flex flex-col justify-start border-2 border-[#979797] w-[80%] mb-8 shadow-[0_34.0693px_36.1986px_rgba(0,0,0,0.133714)] rounded-[26.6166px]" data-aos="flip-left" data-aos-duration="2000">
@@ -59,7 +57,6 @@ const Properties = () => {
                         )
                     })}
                 </div>
-            </div>
             </div>
        </> 
      );

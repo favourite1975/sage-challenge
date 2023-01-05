@@ -6,7 +6,7 @@ const AddProperty = () => {
     const [price, setPrice] = useState("")
     const [unit, setUnit] = useState(0)
     return ( 
-        <div className="px-40 pb-[10rem]">
+        <div className="w-full px-4 overflow-x-hidden lg:px-40 lg:px-40 pb-[10rem]"  data-aos="zoom-in" data-aos-duration="2000">
             <div className="w-full pb-10 shadow-[0_4px_63px_rgba(0,0,0,0.15)] rounded-[10px]">
                 <div>
                     <h3 className="font-popins font-bold py-10 text-primary text-center text-[28px]">Add A New Property</h3>
@@ -124,7 +124,7 @@ const AddProperty = () => {
                         </div>
                     </div>
                     <div className='flex justify-center items-center my-10'>
-                        <button className="bg-primary w-[513px] h-[69.01px] flex justify-center items-center text-[21px] text-white rounded-[10px]">Add New Property</button>
+                        <button className="bg-primary w-[320px] h-[59.01px] lg:w-[513px] lg:h-[69.01px] xl:w-[513px] xl:h-[69.01px] flex justify-center items-center text-[21px] text-white rounded-[10px]">Add New Property</button>
                     </div>
                 </form>
             </div>
