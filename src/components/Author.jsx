@@ -1,8 +1,17 @@
 import {card, wilson} from "../assets/index"
+import {useEffect} from "react"
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Author = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return ( 
         <div className="w-full flex flex-col lg:flex-row xl:flex-row mb-8">
-            <div className="w-1/2 bg-[#f4511e] bg-opacity-10 flex flex-col justify-center px-20">
+            <div className="w-1/2 bg-[#f4511e] bg-opacity-10 flex flex-col justify-center px-20" data-aos="zoom-in-right" data-aos-duration="2000">
                 <div>
                     <p className="font-inter text-[21px] font-normal text-secondary leading-[36px] pl-6">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -29,7 +38,7 @@ const Author = () => {
                     <div className="font-bold text-4xl text-[#D9DBE1]">.</div>
                 </div>
             </div>
-            <div className="w-1/2">
+            <div className="w-1/2" data-aos="zoom-in-left" data-aos-duration="2000">
                 <img src={card} alt="" className="w-full h-[590px]"/>
             </div>
         </div>

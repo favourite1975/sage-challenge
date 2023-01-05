@@ -1,8 +1,18 @@
 // Data
 import data from '../data/data.json'
 
+import {useEffect} from "react"
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Properties = () => {
     let properties = data.properties
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
 
     return ( 
        <>
@@ -12,7 +22,7 @@ const Properties = () => {
                 <div className='grid lg:grid-cols-3 xl:grid-cols-3 grid-cols-1 pt-8 gap-5'>
                     {properties.map((property) => {
                         return (
-                            <div key={property.id} className="flex flex-col justify-start border-2 border-[#979797] w-[80%] mb-8 shadow-[0_34.0693px_36.1986px_rgba(0,0,0,0.133714)] rounded-[26.6166px]">
+                            <div key={property.id} className="flex flex-col justify-start border-2 border-[#979797] w-[80%] mb-8 shadow-[0_34.0693px_36.1986px_rgba(0,0,0,0.133714)] rounded-[26.6166px]" data-aos="flip-left" data-aos-duration="2000">
                                 <div className=''>
                                     <img src={property.propertyImg} alt="" />
                                 </div>

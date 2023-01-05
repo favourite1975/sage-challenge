@@ -1,3 +1,4 @@
+import {useEffect} from "react"
 import Navbar from "../components/Navbar";
 // Data
 import data from '../data/data.json'
@@ -10,20 +11,29 @@ import About from "../components/About";
 import AddProperty from "../components/AddProperty";
 import Author from "../components/Author";
 import Footer from "../components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 
 const Home = () => {
+
     let home = data.home
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
     return ( 
         <div >
             <header className="bg-home h-screen w-full bg-cover bg-no-repeat ">
                 <Navbar />
 
-                <div className="flex w-full flex-row pt-12 justify-center items-center">
-                    <div className="w-1/2 ">
+                <div className="flex w-full flex-row pt-12 justify-center items-center" >
+                    <div className="w-1/2 " data-aos="fade-right" data-aos-duration="2000">
                         <div className="pr-[8rem] font-inter text-white leading-[70px] font-semibold capitalize font-normal text-[42px]">{home[0].title}</div>
                     </div>
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="3000">
                         <div>
                             <img src={map} alt="" />
                         </div>
@@ -53,13 +63,13 @@ const Home = () => {
                 <section>
                     <About />
                 </section>
-                <section>
+                <section data-aos="zoom-in" data-aos-duration="2000">
                     <AddProperty />
                 </section>
                 <section>
                     <Author />
                 </section>
-                <footer>
+                <footer data-aos="fade-up" data-aos-duration="2000">
                     <Footer/>
                 </footer>
             </main>

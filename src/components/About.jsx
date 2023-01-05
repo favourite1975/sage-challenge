@@ -1,16 +1,27 @@
+import {useEffect} from "react"
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const About = () => {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
     return ( 
         <div className="p-10 flex flex-col">
             <div className="flex w-full flex-row justify-center items-center px-[4rem]">
 
                 <div className="w-1/2 flex flex-col gap-8">
                     <div className="flex flex-row gap-5">
-                        <div className="w-[250px] h-[334px] text-white font-inter text-[24px] bg-flexible bg-cover bg-no-repeat text-center pt-2">Flexible Leases</div>
-                        <div className="w-[270px] h-[270px] text-white font-inter text-[24px] bg-happiness bg-cover bg-no-repeat text-center pt-2 mt-12">7-Day Happiness Guaranteed</div>
+                        <div className="w-[250px] h-[334px] text-white font-inter text-[24px] bg-flexible bg-cover bg-no-repeat text-center pt-2" data-aos="fade-down-right" data-aos-duration="2000">Flexible Leases</div>
+                        <div className="w-[270px] h-[270px] text-white font-inter text-[24px] bg-happiness bg-cover bg-no-repeat text-center pt-2 mt-12" data-aos="zoom-in" data-aos-duration="2000">7-Day Happiness Guaranteed</div>
                     </div>
                     <div className="flex flex-row gap-5 ">
-                        <div className="w-[212px] h-[285px] text-white font-inter text-[24px] bg-cleaning bg-cover bg-no-repeat text-center pt-2">Monthly House Cleaning</div>
-                        <div className="w-[338px] h-[356px] text-white font-inter text-[24px] px-1 bg-roomate bg-cover bg-no-repeat text-center pt-2">Choose Your Own Roommate</div>
+                        <div className="w-[212px] h-[285px] text-white font-inter text-[24px] bg-cleaning bg-cover bg-no-repeat text-center pt-2" data-aos="zoom-in" data-aos-duration="2000">Monthly House Cleaning</div>
+                        <div className="w-[338px] h-[356px] text-white font-inter text-[24px] px-1 bg-roomate bg-cover bg-no-repeat text-center pt-2" data-aos="fade-down-left" data-aos-duration="2000">Choose Your Own Roommate</div>
                     </div>
                 </div>
 
