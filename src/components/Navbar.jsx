@@ -44,7 +44,7 @@ const Navbar = () => {
                         <img src={logo} alt="logo image" className='w-/2 ' />
                     </a>
                 </div>   
-                <Menu as="div" className="flex z-50 text-left relative">
+                <Menu as="div" className="flex z-[999] text-left relative">
                     <Menu.Button>
                     <div className='text-white'>
                         
