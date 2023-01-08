@@ -26,7 +26,7 @@ const Home = () => {
       }, []);
     return ( 
         <div className="w-full">
-            <header className="bg-home h-screen w-full bg-cover bg-no-repeat ">
+            <header className="bg-[url('https://res.cloudinary.com/phantom1245/image/upload/v1672847368/rental/home_f1aame.png')] h-screen w-full bg-cover bg-no-repeat ">
                 <Navbar />
 
                 <div className="flex w-full flex-col xl:flex-row lg:flex-row pt-12 justify-center items-center" >

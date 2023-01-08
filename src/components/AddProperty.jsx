@@ -124,7 +124,7 @@ const AddProperty = () => {
                         </div>
                     </div>
                     <div className='flex justify-center items-center my-10'>
-                        <button className="bg-primary w-[320px] h-[59.01px] lg:w-[513px] lg:h-[69.01px] xl:w-[513px] xl:h-[69.01px] flex justify-center items-center text-[21px] text-white rounded-[10px]">Add New Property</button>
+                        <button className="bg-primary w-[250px] h-[58px] lg:w-[513px] lg:h-[69.01px] xl:w-[513px] xl:h-[69.01px] flex justify-center items-center text-lg lg:text-xl text-white rounded-[10px]">Add New Property</button>
                     </div>
                 </form>
             </div>
