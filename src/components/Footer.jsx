@@ -87,7 +87,7 @@ const Footer = () => {
                     <div className="font-inter font-normal uppercase text-[14px] text-secondary">Privacy Policy</div>
                     <div className="font-inter font-normal uppercase text-[14px] text-secondary">Disclaimer</div>
                 </div>
-                <div className="font-inter font-normal uppercase text-[14px] text-secondary opacity-50">
+                <div className="font-inter px-2 font-normal uppercase text-[14px] text-secondary opacity-50">
                     Copyright © 2020 Minimumlivingcost. All rights reserved
                 </div>
             </div>
