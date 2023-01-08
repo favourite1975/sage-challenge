@@ -30,14 +30,16 @@ const Home = () => {
                 <Navbar />
 
                 <div className="flex w-full flex-col xl:flex-row lg:flex-row pt-12 justify-center items-center" >
-                    <div className="lg:w-1/2 xl:w-1/2 w-full" data-aos="fade-right" data-aos-duration="2000">
-                        <div className="px-5 lg:px-0 xl:px-0 lg:pr-[8rem] xl:pr-[8rem] font-inter text-white lg:leading-[70px] xl:leading-[70px] text-center lg:text-left xl:text-left font-semibold capitalize font-normal text-[22px] lg:text-[42px] xl:text-[42px]">{home[0].title}</div>
+                    <div className="lg:w-1/2 xl:w-1/2 w-full">
+                        <div className="px-5 lg:px-0 xl:px-0 lg:pr-[8rem] xl:pr-[8rem] font-inter text-white lg:leading-[70px] xl:leading-[70px] text-center lg:text-left xl:text-left font-semibold capitalize font-normal text-[22px] lg:text-[42px] xl:text-[42px]">
+                            The most <span className="">affordable</span> place to stay in the san franciso bay area
+                        </div>
                     </div>
                     <div className="flex flex-col justify-center items-center lg:justify-start xl:justify-start" data-aos="fade-up" data-aos-duration="3000">
                         <div className="flex justify-center items-center pt-4 lg:justify-start xl:justify-start">
                             <img src={map} alt="" className="w-[90%] lg:w-full xl:w-full"/>
                         </div>
-                        <div className="py-4 rounded-xl gap-2 w-[90%] bg-white pl-8 flex flex-row">
+                        <div className="py-4 rounded-xl gap-2 w-[90%] bg-white px-2 justify-center items-center flex-wrap lg:pl-8 flex flex-row">
                             <div >
                                 <Dropdown value={"all types"} />
                             </div>

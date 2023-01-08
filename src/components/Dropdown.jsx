@@ -7,7 +7,7 @@ export default function Dropdown({value}) {
     <div className="">
       <Menu as="div" className="w-full relative inline-block text-left">
         <div>
-          <Menu.Button className="inline-flex capitalize w-full justify-between rounded-md bg-white border-2 px-4 py-3 text-sm font-medium text-black hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+          <Menu.Button className="inline-flex capitalize w-full justify-between rounded-md bg-white border-2 px-2 lg:px-4 py-3 text-sm font-medium text-black hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
             {value}
             <ChevronDownIcon
               className="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"

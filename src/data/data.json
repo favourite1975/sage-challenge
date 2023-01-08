@@ -7,11 +7,7 @@
             "navbarLink" : ["home", "Landloard", "Tenants", "Contact Us"]
         }
     ],
-    "home" : [
-        {
-            "title" : "The most affortable place to stay in the san franciso bay area"
-        }
-    ],
+
     "Offers" : [
         {
             "offerImg" : "https://res.cloudinary.com/phantom1245/image/upload/v1672842945/rental/unsplash_oGmf8o53LeE_vptqc7.png"

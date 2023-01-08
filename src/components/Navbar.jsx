@@ -62,8 +62,9 @@ const Navbar = () => {
                     leave="transition ease-in duration-75"
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
+                    className="z-40"
                     >
-                    <Menu.Items className="z-[999] text-secondary shadow-lg absolute right-0 top-10 w-56 origin-top-right divide-y  px-2 rounded-xl bg-violet-500 ring-1 ring-black ring-opacity-5 focus:outline-none" data-aos="zoom-in" data-aos-duration="2000">
+                    <Menu.Items className="z-40 text-secondary shadow-lg absolute right-0 top-10 w-56 origin-top-right divide-y  px-2 rounded-xl bg-violet-500 ring-1 ring-black ring-opacity-5 focus:outline-none" data-aos="zoom-in" data-aos-duration="2000">
                         <Menu.Item>
                             <a href="/register" className="text-sm group flex w-full items-center px-[20px] py-[15px]">Create An Account</a>
                         </Menu.Item>

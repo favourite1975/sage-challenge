@@ -16,7 +16,7 @@ const Offers = () => {
 
     return ( 
         <div className="w-full py-20 px-8 xl:px-0 lg:px-0 lg:pl-20 xl:pl-20">
-            <h2 className="font-interb capitalize text-[26px] text-secondary"><span className="xl:border-b-2 lg:border-b-2 pb-2 w-full border-primary">minimum living cost</span> takes care of everything</h2>
+            <h2 className="font-interb capitalize text-[26px] text-secondary"><span className="xl:border-b-2 border-b-2 lg:pb-2 w-full border-primary">minimum living cost</span> takes care of everything</h2>
             <div className='pt-2 flex flex-col lg:flex-row xl:flex-row justify-center '>
                 <div data-aos="fade-up-right" data-aos-duration="2000">
                     <img src={offer[0].offerImg} alt="" />

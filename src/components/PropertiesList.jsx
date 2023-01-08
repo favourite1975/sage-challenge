@@ -10,7 +10,7 @@ const PropertiesList = () => {
     }
 
     return ( 
-        <div className="w-full overflow-x-hidden pl-0 xl:pl-20 xl:pl-20 bg-[#F5F5F5] pt-20 pb-10">
+        <div className="w-full overflow-x-hidden pl-2 xl:pl-8 xl:pl-8 bg-[#F5F5F5] pt-20 pb-10">
             <div className="w-full flex justify-center lg:justify-between xl:justify-between items-center pr-0 lg:pr-20 xl:pr-20">
                 <div>
                     <h2 className="font-interb text-center lg:text-left xl:text-left capitalize text-[26px] text-secondary"><span className="border-b-2 pb-2 w-full border-primary">list</span> of properties</h2>

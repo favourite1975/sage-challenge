@@ -13,6 +13,7 @@ import twitter from "./media/icon/Twitter.png"
 import youtube from "./media/icon/Youtube.png"
 import instagram from "./media/icon/Instagram.png"
 import pinterest from "./media/icon/Pinterest.png"
+import vide from "./media/videos/vide.mp4"
 
 
 export {
@@ -30,6 +31,7 @@ export {
     twitter,
     youtube,
     instagram,
-    pinterest
+    pinterest,
+    vide
 
 }

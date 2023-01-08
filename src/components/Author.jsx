@@ -1,4 +1,4 @@
-import {card, wilson} from "../assets/index"
+import {card, wilson, vide} from "../assets/index"
 import {useEffect} from "react"
 
 import AOS from "aos";
@@ -39,7 +39,8 @@ const Author = () => {
                 </div>
             </div>
             <div className="w-full pt-10 lg:pt-0 xl:pt-0 lg:w-1/2 xl:w-1/2 px-6 lg:px-0 xl:px-0" data-aos="zoom-in-left" data-aos-duration="2000">
-                <img src={card} alt="" className="w-full lg:h-[590px] h-max rounded-lg "/>
+                {/* <img src={card} alt="" /> */}
+                <video src={vide} className="w-full lg:h-[590px] h-max rounded-lg " controls>Sorry can't play video</video>
             </div>
         </div>
      );

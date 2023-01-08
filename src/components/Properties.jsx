@@ -16,14 +16,15 @@ const Properties = () => {
 
     return ( 
        <>
-            <div className="w-full flex justify-center items-center  lg:px-20 xl:px-20">
-                <div className='grid lg:grid-cols-3 xl:grid-cols-3 grid-cols-1 pt-8 gap-0 justify-items-center lg:gap-5 xl:gap-5'>
+            <div className="w-full flex justify-center items-center px-5 ">
+                <div className='lg:grid lg:grid-cols-3 xl:grid-cols-3 md:grid md:grid-cols-2 flex flex-row px-10 overflow-x-auto pt-8 gap-8 justify-items-center lg:gap-20 xl:gap-5'>
                     {properties.map((property) => {
                         return (
-                            <div key={property.id} className="flex flex-col justify-start border-2 border-[#979797] w-[80%] mb-8 shadow-[0_34.0693px_36.1986px_rgba(0,0,0,0.133714)] rounded-[26.6166px]" data-aos="flip-left" data-aos-duration="2000">
+                            <div key={property.id} className="hover:scale-110 flex cursor-pointer flex-col justify-start border-2 border-[#979797] mb-8 shadow-[0_34.0693px_36.1986px_rgba(0,0,0,0.133714)] rounded-[26.6166px]" data-aos="flip-left" data-aos-duration="2000">
                                 <div className=''>
-                                    <img src={property.propertyImg} alt="" />
+                                    <img src={property.propertyImg} alt=""  className='w-full'/>
                                 </div>
+                                <div className="px-[8rem] flex lg:hidden lg:px-0 md:px-0 xl:px-0"></div>
                                 <div className='px-4 pt-2 pb-5'>
                                     <div className="pt-2 font-dmsan text-black font-bold capitalize font-normal text-[18px]">{property.address}</div>
                                     <div className='font-normal pt-2 capitalize font-dmsan text-[18px] text-[#818181]'>{property.room}</div>
