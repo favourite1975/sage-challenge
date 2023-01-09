@@ -35,7 +35,7 @@ const Home = () => {
                             The most <span className="">affordable</span> place to stay in the san franciso bay area
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center items-center lg:justify-start xl:justify-start" data-aos="fade-up" data-aos-duration="3000">
+                    <div className="flex flex-col justify-center items-center lg:justify-start xl:justify-start">
                         <div className="flex justify-center items-center pt-4 lg:justify-start xl:justify-start">
                             <img src={map} alt="" className="w-[90%] lg:w-full xl:w-full"/>
                         </div>
