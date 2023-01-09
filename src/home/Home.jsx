@@ -36,7 +36,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="flex flex-col justify-center items-center lg:justify-start xl:justify-start">
-                        <div className="flex justify-center items-center pt-4 lg:justify-start xl:justify-start">
+                        <div className="flex justify-center items-center pt-8 lg:justify-start xl:justify-start">
                             <img src={map} alt="" className="w-[90%] lg:w-full xl:w-full"/>
                         </div>
                         <div className="py-4 rounded-xl gap-2 w-[90%] bg-white px-2 justify-center items-center flex-wrap lg:pl-8 flex flex-row">
