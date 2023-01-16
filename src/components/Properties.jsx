@@ -16,11 +16,11 @@ const Properties = () => {
 
     return ( 
        <>
-            <div className="w-full flex justify-center items-center px-5 ">
+            <div className="w-full flex justify-center items-center px-2 ">
                 <div className='lg:grid lg:grid-cols-3 xl:grid-cols-3 md:grid md:grid-cols-2 flex flex-row px-0 overflow-x-auto pt-8 gap-8 justify-items-center lg:gap-20 xl:gap-5'>
                     {properties.map((property) => {
                         return (
-                            <div key={property.id} className="flex cursor-pointer flex-col justify-start border-2 border-[#979797] mb-8 shadow-[0_34.0693px_36.1986px_rgba(0,0,0,0.133714)] rounded-[26.6166px]" data-aos="flip-left" data-aos-duration="2000">
+                            <div key={property.id} className="flex cursor-pointer flex-col justify-start border-2 border-[#979797] mb-8 shadow-2xl rounded-[26.6166px]" data-aos="flip-left" data-aos-duration="2000">
                                 <div className=''>
                                     <img src={property.propertyImg} alt=""  className='w-full'/>
                                 </div>
