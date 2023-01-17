@@ -66,16 +66,16 @@ const Navbar = () => {
                     >
                     <Menu.Items className="z-[999] text-secondary shadow-lg absolute right-0 top-10 w-56 origin-top-right divide-y  px-2 rounded-xl bg-violet-500 ring-1 ring-black ring-opacity-5 focus:outline-none" data-aos="zoom-in" data-aos-duration="2000">
                         <Menu.Item>
-                            <a href="/register" className="text-sm group flex w-full items-center px-[20px] py-[15px]">Create An Account</a>
+                            <a href="/" className="text-sm group flex w-full items-center px-[20px] py-[15px]">Home</a>
                         </Menu.Item>
                         <Menu.Item>
-                            <a href="/login" className="text-sm group flex w-full items-center px-[20px] py-[15px]">Login</a>
+                            <a href="/" className="text-sm group flex w-full items-center px-[20px] py-[15px]">Landlord</a>
                         </Menu.Item>
                         <Menu.Item>
-                            <a href="/about" className="text-sm group flex w-full items-center px-[20px] py-[15px]">About Us</a>
+                            <a href="/" className="text-sm group flex w-full items-center px-[20px] py-[15px]">Tenants</a>
                         </Menu.Item>
                         <Menu.Item>
-                            <a href="/github" className="text-sm group flex w-full items-center px-[20px] py-[15px]">Github</a>
+                            <a href="/github" className="text-sm group flex w-full items-center px-[20px] py-[15px]">Contact Us</a>
                         </Menu.Item>
 
                     </Menu.Items>
