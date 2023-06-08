@@ -1,16 +1,16 @@
 import {useEffect} from "react"
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 // Data
-import data from '../data/data.json'
-import {map} from '../assets/index'
+import data from '../../data/data.json'
+import {map} from '../../assets/index'
 import { Menu } from '@headlessui/react'
-import Dropdown from "../components/Dropdown";
-import Offers from "../components/Offers";
-import PropertiesList from "../components/PropertiesList";
-import About from "../components/About";
-import AddProperty from "../components/AddProperty";
-import Author from "../components/Author";
-import Footer from "../components/Footer";
+import Dropdown from "../../components/Dropdown";
+import Offers from "../../components/Offers";
+import PropertiesList from "../../components/PropertiesList";
+import About from "../../components/About";
+import AddProperty from "../../components/AddProperty";
+import Author from "../../components/Author";
+import Footer from "../../components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -31,7 +31,7 @@ const Home = () => {
 
                 <div className="flex w-full flex-col xl:flex-row lg:flex-row pt-12 justify-center items-center" >
                     <div className="lg:w-1/2 xl:w-1/2 w-full">
-                        <div className="px-5 lg:px-0 xl:px-0 lg:pr-[8rem] xl:pr-[8rem] font-inter text-white lg:leading-[70px] xl:leading-[70px] text-center lg:text-left xl:text-left font-semibold capitalize font-normal text-[22px] lg:text-[42px] xl:text-[42px]">
+                        <div className="px-5 lg:px-0 xl:px-0 lg:pr-[8rem] xl:pr-[8rem] font-inter text-white lg:leading-[70px] xl:leading-[70px] text-center lg:text-left xl:text-left capitalize font-normal text-[22px] lg:text-[42px] xl:text-[42px]">
                             The most <span className="">affordable</span> place to stay in the san franciso bay area
                         </div>
                     </div>

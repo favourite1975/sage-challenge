@@ -1,13 +1,18 @@
-import Home from "./home/Home"
+import React, { useEffect } from "react";
+import { Outlet } from "react-router-dom";
+import { CartProvider } from "./context/CartContext";
 
-
-function App() {
+export default function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <div className="">
-      <Home />
-    </div>
-  )
+    <CartProvider>
+      <>
+        {/* Renders all children i.e all other routes */}
+        <Outlet />
+      </>
+    </CartProvider>
+  );
 }
-
-export default App
